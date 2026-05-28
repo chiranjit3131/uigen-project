@@ -1,0 +1,4 @@
+Follow the below set of instructions 
+
+1. Run "npm audit" to find vulnerable installed packages in thiss project 
+2. Run "npm audit fix" to apply updates
