@@ -41,7 +41,7 @@ jobs:
           # Authenticate to the Claude API via Workload Identity Federation
           # (the workflow's OIDC token is exchanged for a short-lived access
           # token) instead of a static API key. See docs/setup.md.
-          anthropic_api_key: "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"
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           custom_instructions: |
             The project is already setup with all dependencies installed. The server is already running at localhost:3000. Logs for it are being written to logs.txt
             If needed, you can query the DB with 'sqlite3' cli. If needed use the mcp_playwright set of tools to launch a browser and interact with the app
